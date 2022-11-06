@@ -154,11 +154,11 @@ add_executable(receiver src/receiver.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(publisher
         ${catkin_LIBRARIES}
-        fmt
+        Sophus::Sophus
         )
 target_link_libraries(receiver
         ${catkin_LIBRARIES}
-        fmt
+        Sophus::Sophus
         )
 
 #############
