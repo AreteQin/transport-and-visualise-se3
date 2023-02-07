@@ -36,6 +36,7 @@ int main(int argc, char **argv) {
     transform_stamped.transform.rotation.w = current_position.unit_quaternion().w();
 
     pose_br.sendTransform(transform_stamped);
+
     ros::Duration(0.01).sleep();
     ros::spinOnce();
   }
